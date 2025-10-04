@@ -1,48 +1,252 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Contact</title>
-<link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – ISEN Ouest</title>
+  <link href="style.css" rel="stylesheet">
+  <style>
+    html {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    /* HEADER */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #e30613;
+      padding: 0.5rem 2rem;
+    }
+    .nav-bar img {
+      height: 45px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Fil d’Ariane */
+    .breadcrumb {
+      font-size: 14px;
+      margin: 15px 0 0 20px;
+    }
+    .breadcrumb a {
+      text-decoration: none;
+      color: #e30613;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTACT FORM */
+    .contact-section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .contact-section h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 20px;
+    }
+    .contact-section p {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    label {
+      font-weight: 600;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: "Open Sans", sans-serif;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    button {
+      background-color: #e30613;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #b90512;
+    }
+
+    /* FOOTER FINAL */
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+    .footer-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .footer-col-logo {
+      flex: 1;
+      min-width: 220px;
+    }
+    .footer-logo {
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    .footer-links-section {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-cities {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .footer-links-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .footer-col h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-col li {
+      margin-bottom: 6px;
+    }
+    .footer-col a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .footer-col a:hover {
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- HEADER FINAL -->
   <header>
-  <nav>
-    <a href="index.html">Accueil</a> |
-    <a href="postbac.html">Post-bac</a> |
-    <a href="apprentissage.html">Apprentissage</a> |
-    <a href="formations.html">Formations</a> |
-    <a href="devenir_inge.html">Devenir ingénieur</a> |
-    <a href="contact.html"><strong>Contact</strong></a>
-  </nav>
-</header>
-
-
-  <main style="max-width:720px;margin:16px auto">
-  <h1>Formulaire de contact</h1>
-  <form action="#" method="post" style="display:grid;gap:12px">
-    <label>Nom <input type="text" name="nom" required></label>
-    <label>Email <input type="email" name="email" required></label>
-    <label>Message <textarea name="message" rows="5" required></textarea></label>
-    <button type="submit">Envoyer</button>
-  </form>
-</main>
-
-
-  <footer class="site-footer">
-  <div class="inner container">
-    <div class="links">
-      <a href="index.html">Accueil</a>
-      <a href="postbac.html">Post-bac</a>
-      <a href="apprentissage.html">Apprentissage</a>
-      <a href="formations.html">Formations</a>
-      <a href="devenir_inge.html">Devenir ingénieur</a>
-      <a href="contact.html">Contact</a>
+    <div class="nav-bar">
+      <a href="index.html"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest"></a>
+      <div class="nav-links">
+        <a href="devenir_inge.html">Devenir ingénieur</a>
+        <a href="formations.html">Formations</a>
+        <a href="postbac.html">Cycle Post-bac</a>
+        <a href="apprentissage.html">Apprentissage</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-    <div class="meta">© ISEN Ouest — Version 2</div>
-  </div>
-</footer>
+  </header>
 
+  <!-- FIL D’ARIANE -->
+  <div class="breadcrumb">
+    <a href="index.html">Accueil</a> > <strong>Contact</strong>
+  </div>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact-section">
+    <h1>Nous contacter</h1>
+    <p>Vous pouvez nous écrire via ce formulaire, ou consulter nos campus à Brest, Caen, Nantes, Paris et Rennes.</p>
+    <form>
+      <label for="name">Nom complet</label>
+      <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- FOOTER FINAL -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col footer-col-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" alt="ISEN Ouest" class="footer-logo">
+      </div>
+
+      <div class="footer-links-section">
+        <p class="footer-cities">Brest – Caen – Nantes – Paris – Rennes</p>
+        <div class="footer-links-container">
+          <div class="footer-col">
+            <h3>Devenir ingénieur</h3>
+            <ul>
+              <li><a href="#">Cycle post-bac</a></li>
+              <li><a href="#">Formation d’ingénieur</a></li>
+              <li><a href="#">Apprentissage</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Entreprises</h3>
+            <ul>
+              <li><a href="#">Recruter un étudiant</a></li>
+              <li><a href="#">Recherche partenariale</a></li>
+              <li><a href="#">Taxe d’apprentissage</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Étudiants</h3>
+            <ul>
+              <li><a href="#">Informations pratiques</a></li>
+              <li><a href="#">Sportifs</a></li>
+              <li><a href="#">Alumni AIISEN</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 ISEN Ouest – Tous droits réservés.</div>
+  </footer>
 
 </body>
 </html>

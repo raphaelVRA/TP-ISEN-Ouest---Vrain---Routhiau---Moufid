@@ -1,33 +1,72 @@
-/* ---------- F61 Footer final (Élève 3) ---------- */
+/* ===== Footer V2 (E3 / F61) ===== */
+.site-footer{background:#000;color:#fff;padding:40px 20px 20px}
+.footer-container{max-width:1200px;margin:0 auto;display:flex;gap:40px;flex-wrap:wrap}
+.footer-col-logo{flex:1;min-width:260px;display:flex;flex-direction:column;gap:16px}
+.footer-logo{height:100px;display:block}
 
-footer.site-footer {
-  margin-top: 40px;
-  border-top: 1px solid #e5e5e5;
-  background: #0b0b0b;
-  color: #fff;
+.btn-contact{display:inline-block;align-self:flex-start;background:#e30613;color:#fff;
+  padding:10px 20px;border-radius:28px;font-weight:700;text-decoration:none}
+.btn-contact:hover{text-decoration:underline}
+
+.footer-social{display:flex;gap:10px}
+.footer-social a{display:inline-block;width:28px;height:28px;border:1px solid #fff;
+  border-radius:4px;line-height:26px;text-align:center;color:#fff;text-decoration:none}
+
+.footer-links{flex:2;min-width:520px}
+.footer-cities{font-size:32px;font-weight:700;margin:0 0 20px;text-align:center}
+.footer-grids{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.footer-grids h4{margin:0 0 10px;font-size:16px}
+.footer-grids ul{margin:0;padding:0;list-style:none}
+.footer-grids li{margin:8px 0}
+.footer-grids a{color:#fff;text-decoration:none}
+.footer-grids a:hover{text-decoration:underline}
+
+.footer-bottom{background:#fff;color:#000;text-align:center;padding:8px 0;font-size:14px}
+/* Layout généraux */
+:root{--line:#e5e5e5;--brand:#e30613}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;color:#111}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* Breadcrumbs */
+.breadcrumbs{font-size:14px;color:#444;margin:18px auto}
+.breadcrumbs a{color:#444;text-decoration:none}
+.breadcrumbs a:hover{text-decoration:underline}
+.breadcrumbs .sep{padding:0 6px;color:#999}
+
+/* TEXT + IMAGE */
+.ti{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:start;margin:8px auto 32px}
+.ti h1{font-size:36px;line-height:1.2;margin:8px 0 12px}
+.ti p{margin:0 0 12px}
+.ti-img img{width:100%;height:auto;display:block}
+
+/* CARDS (FISE / FISA) */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:8px auto 48px}
+.card{background:#fff;border:1px solid #e4c5c5;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.card-media img{width:100%;height:auto;display:block}
+.card-body{padding:16px 18px 20px}
+.card-body h2{margin:2px 0 10px;font-size:20px}
+.btn-red{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:10px 16px;border-radius:28px;font-weight:700}
+.btn-red:hover{text-decoration:underline}
+@media (max-width:900px){
+  .ti{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
 }
 
-footer.site-footer .inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-}
-
-footer .links a {
-  margin-right: 12px;
-  text-decoration: none;
-  color: #fff;
-}
-
-footer .links a:hover {
-  text-decoration: underline;
-}
-
-footer .meta {
-  font-size: 14px;
-  color: #ccc;
-}
+/* FOOTER final (E3) */
+.site-footer{background:#000;color:#fff;margin-top:40px}
+.footer-container{max-width:1100px;margin:0 auto;padding:28px 16px;display:flex;gap:40px;flex-wrap:wrap}
+.footer-col-logo{flex:1;min-width:240px}
+.footer-logo{height:80px;display:block;margin-bottom:12px}
+.btn-contact{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:10px 16px;border-radius:28px;font-weight:700}
+.btn-contact:hover{text-decoration:underline}
+.footer-links{flex:3;min-width:420px}
+.footer-cities{margin:0 0 16px;font-weight:800;font-size:22px;text-align:center}
+.footer-grids{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.footer-grids h4{margin:0 0 8px}
+.footer-grids ul{margin:0;padding:0;list-style:none}
+.footer-grids li{margin:6px 0}
+.footer-grids a{color:#fff;text-decoration:none}
+.footer-grids a:hover{text-decoration:underline}
+.footer-bottom{background:#fff;color:#000;text-align:center;font-size:13px;padding:8px 0}
 
