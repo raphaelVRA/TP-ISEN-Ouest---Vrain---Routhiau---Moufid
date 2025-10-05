@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact – ISEN Ouest</title>
   <link href="style.css" rel="stylesheet">
+
   <style>
     html {
       font-family: "Open Sans", sans-serif;
     }
 
-    /* HEADER */
+    /* -------- HEADER -------- */
     header {
       background: #fff;
       border-bottom: 1px solid #e5e5e5;
     }
+
     .nav-bar {
       display: flex;
       align-items: center;
@@ -22,59 +24,103 @@
       background-color: #e30613;
       padding: 0.5rem 2rem;
     }
+
     .nav-bar img {
       height: 45px;
     }
+
     .nav-links {
       display: flex;
       gap: 1.5rem;
     }
+
     .nav-links a {
       color: #fff;
       font-weight: bold;
       text-decoration: none;
     }
+
     .nav-links a:hover {
       text-decoration: underline;
     }
 
-    /* Fil d’Ariane */
+    /* -------- FIL D’ARIANE -------- */
     .breadcrumb {
-      font-size: 14px;
-      margin: 15px 0 0 20px;
+      background: #fff;
     }
+
+    .breadcrumb-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 10px;
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    .breadcrumb-content {
+      display: flex;
+      align-items: center;
+      font-size: 1.12em;
+    }
+
     .breadcrumb a {
-      text-decoration: none;
       color: #e30613;
+      text-decoration: none;
     }
+
     .breadcrumb a:hover {
       text-decoration: underline;
     }
 
-    /* CONTACT FORM */
+    .breadcrumb .separator {
+      margin: 0 8px;
+      color: #999;
+    }
+
+    .breadcrumb .current {
+      color: #000;
+      font-weight: 600;
+      margin-left: 4px;
+    }
+
+    .breadcrumb-line {
+      flex: 1;
+      height: 2px;
+      background: #e30613;
+      margin-left: 15px;
+      align-self: center;
+    }
+
+    /* -------- FORMULAIRE CONTACT -------- */
     .contact-section {
       max-width: 900px;
       margin: 50px auto;
       padding: 20px;
     }
+
     .contact-section h1 {
       font-size: 32px;
       font-weight: 700;
       color: #000;
       margin-bottom: 20px;
     }
+
     .contact-section p {
       color: #333;
       margin-bottom: 20px;
     }
+
     form {
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
+
     label {
       font-weight: 600;
     }
+
     input, textarea {
       padding: 10px;
       font-size: 16px;
@@ -82,10 +128,12 @@
       border-radius: 5px;
       font-family: "Open Sans", sans-serif;
     }
+
     textarea {
       resize: vertical;
       min-height: 120px;
     }
+
     button {
       background-color: #e30613;
       color: white;
@@ -96,17 +144,19 @@
       cursor: pointer;
       transition: background 0.3s;
     }
+
     button:hover {
       background-color: #b90512;
     }
 
-    /* FOOTER FINAL */
+    /* -------- FOOTER -------- */
     footer {
       background: #000;
       color: #fff;
       padding: 40px 20px;
       font-family: Arial, sans-serif;
     }
+
     .footer-container {
       display: flex;
       max-width: 1200px;
@@ -114,62 +164,74 @@
       gap: 40px;
       flex-wrap: wrap;
     }
+
     .footer-col-logo {
       flex: 1;
       min-width: 220px;
     }
+
     .footer-logo {
       height: 100px;
       margin-bottom: 15px;
     }
+
     .footer-links-section {
       flex: 3;
       display: flex;
       flex-direction: column;
     }
+
     .footer-cities {
       font-size: 28px;
       font-weight: 700;
       margin-bottom: 20px;
     }
+
     .footer-links-container {
       display: flex;
       gap: 40px;
       flex-wrap: wrap;
     }
+
     .footer-col h3 {
       font-size: 16px;
       font-weight: 700;
       margin-bottom: 10px;
     }
+
     .footer-col ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
+
     .footer-col li {
       margin-bottom: 6px;
     }
+
     .footer-col a {
       color: #fff;
       text-decoration: none;
       font-size: 14px;
     }
+
     .footer-col a:hover {
       text-decoration: underline;
     }
+
     .footer-bottom {
       text-align: center;
       margin-top: 20px;
       font-size: 13px;
       color: #aaa;
     }
+
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER FINAL -->
+  <!-- HEADER -->
   <header>
     <div class="nav-bar">
       <a href="index.html"><img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest"></a>
@@ -183,10 +245,19 @@
     </div>
   </header>
 
-  <!-- FIL D’ARIANE -->
-  <div class="breadcrumb">
-    <a href="index.html">Accueil</a> > <strong>Contact</strong>
-  </div>
+  <!-- FIL D’ARIANE MODERNE -->
+  <nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <div class="breadcrumb-container">
+      <div class="breadcrumb-content">
+        <a href="index.html">Accueil</a>
+        <span class="separator">›</span>
+        <a href="contact.html">Contact</a>
+        <span class="separator">›</span>
+        <span class="current">Formulaire</span>
+      </div>
+      <div class="breadcrumb-line" aria-hidden="true"></div>
+    </div>
+  </nav>
 
   <!-- SECTION CONTACT -->
   <section class="contact-section">
@@ -206,7 +277,7 @@
     </form>
   </section>
 
-  <!-- FOOTER FINAL -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-container">
       <div class="footer-col footer-col-logo">

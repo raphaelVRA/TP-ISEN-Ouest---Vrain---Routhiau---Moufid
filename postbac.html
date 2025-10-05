@@ -1,94 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-    <style>
-html {
-    font-family: Open Sans,sans-serif;
-}
-/* Conteneur principal du header */
-.header-isen {
-  background: #fff;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-/* Organisation interne */
-.header-container {
-  max-width: 1400px; /* un peu plus large pour aérer */
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Logo */
-.header-logo img {
-  height: 45px; /* logo moins haut */
-  width: auto;
-}
-
-/* Navigation */
-.header-nav {
-  background: #e30613; /* Rouge ISEN */
-  flex: 1; /* occupe toute la largeur dispo */
-  margin-left: 40px; /* espace entre logo et barre rouge */
-}
-
-.header-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around; /* liens espacés sur toute la largeur */
-  margin: 0;
-  padding: 0;
-}
-
-.header-nav li {
-  flex: 1; /* chaque lien occupe une largeur égale */
-  text-align: center;
-}
-
-.header-nav a {
-  display: block;
-  padding: 14px 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #fff;
-  transition: background 0.2s;
-  text-decoration: none;
-}
-
-.header-nav a:hover {
-  text-decoration: underline;
-}
-    </style>
-</head>
-<body>
-<header class="header-isen">
-  <div class="header-container">
-    <!-- Logo -->
-    <a href="/" class="header-logo">
-      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
-    </a>
-
-    <!-- Navbar -->
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#">Liens à venir</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-</body>
-</html>
-=======
-=======
->>>>>>> 23
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -152,6 +61,104 @@ html {
 
     .header-nav a:hover {
       text-decoration: underline;
+    }
+
+    /* -------- FIL D’ARIANE -------- */
+    .breadcrumb {
+      background: #fff;
+    }
+
+    .breadcrumb-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 10px;
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    .breadcrumb-content {
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      font-size: 1.12em;
+    }
+
+    .breadcrumb a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .breadcrumb .separator {
+      margin: 0 8px;
+      color: #999;
+    }
+
+    .breadcrumb .current {
+      color: #000;
+      font-weight: 600;
+      margin-left: 4px;
+    }
+
+    .breadcrumb-line {
+      flex: 1;
+      height: 2px;
+      background: #e30613;
+      margin-left: 15px;
+      align-self: center;
+    }
+
+    /* -------- CONTENU PRINCIPAL -------- */
+    .block-devenir {
+      background: #fff;
+      padding: 60px 20px;
+    }
+
+    .block-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .block-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .block-columns-img {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .block-text {
+      flex: 1;
+      padding-left: 5%;
+    }
+
+    .block-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 18px;
+    }
+
+    .block-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .block-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
 
     /* -------- FOOTER -------- */
@@ -248,58 +255,7 @@ html {
       color: black;
       font-size: 14px;
     }
-<<<<<<< HEAD
-=======
 
-    /* -------- TEXT_IMG -------- */
-    .block-devenir {
-      background: #fff;
-      padding: 60px 20px;
-    }
-
-    .block-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .block-title {
-      font-size: 42px;
-      font-weight: 700;
-      color: #000;
-      margin-bottom: 40px;
-      text-align: left;
-    }
-
-    .block-columns-img {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-
-    .block-text {
-      flex: 1;
-      padding-left: 5%;
-    }
-
-    .block-text p {
-      font-size: 16px;
-      line-height: 1.7;
-      color: #333;
-      margin-bottom: 18px;
-    }
-
-    .block-image {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-    }
-
-    .block-image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
->>>>>>> 23
   </style>
 </head>
 
@@ -320,13 +276,22 @@ html {
     </div>
   </header>
 
+  <!-- FIL D’ARIANE -->
+  <nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <div class="breadcrumb-container">
+      <div class="breadcrumb-content">
+        <a href="index.html">Accueil</a>
+        <span class="separator">›</span>
+        <a href="formations.html">Devenir ingénieur</a>
+        <span class="separator">›</span>
+        <span class="current">Parcours international</span>
+      </div>
+      <div class="breadcrumb-line" aria-hidden="true"></div>
+    </div>
+  </nav>
+
   <!-- CONTENU PRINCIPAL -->
   <main>
-<<<<<<< HEAD
-    <p>Contenu ici...</p>
-=======
-
-    <!-- BLOCK TEXT_IMG -->
     <section class="block-devenir">
       <div class="block-container">
         <h1 class="block-title">Formations post-bac</h1>
@@ -339,13 +304,11 @@ html {
             <p>Au niveau Master 1, qu’il soit sous statut étudiant ou apprenti, chaque élève accède à un large choix de domaines professionnels sans concours ni critère de classement.</p>
           </div>
           <div class="block-image">
-            <img src="https://isen-ouest.fr/wp-content/uploads/2024/09/11/schema-des-etudes-isen-ouest-32.png" alt="Schema des études ISEN Ouest">
+            <img src="https://isen-ouest.fr/wp-content/uploads/2024/09/11/schema-des-etudes-isen-ouest-32.png" alt="Schéma des études ISEN Ouest">
           </div>
         </div>
       </div>
     </section>
-
->>>>>>> 23
   </main>
 
   <!-- FOOTER -->
@@ -368,7 +331,3 @@ html {
 
 </body>
 </html>
-<<<<<<< HEAD
->>>>>>> 22
-=======
->>>>>>> 23
