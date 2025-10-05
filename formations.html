@@ -63,6 +63,83 @@
       text-decoration: underline;
     }
 
+    /* -------- PLUGIN TXT_IMG -------- */
+    .block-devenir {
+      background: #fff;
+      padding: 60px 20px;
+    }
+
+    .block-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .block-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .block-columns-img {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .block-text {
+      flex: 1;
+      padding-left: 5%;
+    }
+
+    .block-text p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 18px;
+    }
+
+    .block-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .block-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    /* -------- FORMATIONS IMAGES -------- */
+    .formations {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+      background: #f8f8f8;
+    }
+
+    .formation-card {
+      text-align: center;
+      width: 220px;
+    }
+
+    .formation-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .formation-card a {
+      text-decoration: none;
+      color: #e30613;
+      font-weight: bold;
+    }
+
     /* -------- FOOTER -------- */
     .site-footer {
       background: #000;
@@ -91,21 +168,6 @@
       margin-top: 30px;
     }
 
-    .btn-contact {
-      display: block;
-      padding: 10px 20px;
-      background: #c8102e;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 25px;
-      margin: auto;
-    }
-
-    .btn-contact:hover {
-      background: #a00b23;
-    }
-
     .footer-links-section {
       flex: 3;
       display: flex;
@@ -116,38 +178,6 @@
       font-size: 40px;
       font-weight: 700;
       margin-bottom: 20px;
-    }
-
-    .footer-links-container {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .footer-col {
-      width: 25%;
-    }
-
-    .footer-col h3 {
-      font-size: 16px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .footer-col ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .footer-col a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .footer-col a:hover {
-      text-decoration: underline;
     }
 
     .footer-bottom {
@@ -178,14 +208,49 @@
   </header>
 
   <!-- CONTENU PRINCIPAL -->
-  <main>
-    <p>Contenu ici...</p>
-  </main>
+
+  <!-- PLUGIN TXT_IMG -->
+  <section class="block-devenir">
+    <div class="block-container">
+      <h1 class="block-title">Titre</h1>
+      <div class="block-columns-img">
+        <div class="block-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue nibh et sollicitudin porttitor.</p>
+          <p>Vivamus facilisis elit non leo luctus efficitur. Duis sed molestie tellus, sed porttitor elit. Phasellus hendrerit vel dolor sit amet vestibulum.</p>
+        </div>
+        <div class="block-image">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATIONS IMAGES -->
+  <section class="formations">
+    <div class="formation-card">
+      <a href="https://isen-ouest.fr">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersecurité">
+        <span>Cybersecurité</span>
+      </a>
+    </div>
+    <div class="formation-card">
+      <a href="https://isen-ouest.fr">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel">
+        <span>Développement logiciel</span>
+      </a>
+    </div>
+    <div class="formation-card">
+      <a href="https://isen-ouest.fr">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle">
+        <span>Intelligence artificielle</span>
+      </a>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-container">
-      <div class="footer-col footer-col-logo">
+      <div class="footer-col-logo">
         <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
              alt="ISEN Ouest" class="footer-logo">
       </div>
